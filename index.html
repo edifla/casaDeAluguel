@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Srisakdi:wght@400;700&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link rel="stylesheet" href="style.css">
+      <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+      <title>Casa Nascer do Sol</title>
+   </head>
+   <body>
+      <header>
+         <div class="casa">
+            <p style="font-family: 'Srisakdi', cursive;"><strong> Casa Nascer do Sol </strong></p>
+         </div>
+         <div class="informacoes">
+            <h3 class="local">Pernambuco - Tamandaré</h3>
+            <div class="contato">
+               <p><img src="assets/phone (1).png" alt="Telefone"> (81) 982129922</p>
+               <p><img src="assets/zap.png" alt="Whatsapp">(81) 982129922</p>
+               <p><img src="assets/Insta.png" alt="Instagram">
+                  <a href="https://www.instagram.com/casa.nascerdosol.tamandare/"
+                     target="__blank">casa.nascerdosol.tamandare</a>
+               </p>
+            </div>
+         </div>
+      </header>
+      <div class="conteudo">
+         <div class="sobre-casa">
+            <div class="c1 um">
+               <h2>Valores & Datas</h2>
+               <img src="assets/icons8-dinheiro-50.png">
+               <p>Datas e valores so podem ser discutidos entrando em contato. Você pode fazer isso pelo instragram, telefone ou whatsapp. Venha falar conosco
+            </div>
+            <div class="c1 dois">
+               <h2>Sobre a casa</h2>
+               <img src="assets/icons8-sol-50.png">
+               <p> Casa duplex, a 230m da orla, bem centralizada possuindo 4 quartos, 2 sendo suítes com ar condicionado e varanda, 5 banheiros e piscina.
+               </p>
+            </div>
+            <div class="c1 tres" onmouseover="pula()" onmouseout="removePula()">
+               <h2>Localidade</h2>
+               <img src="assets/icons8-google-maps-50.png" class="map">
+               <p> Rua 13, Tamandaré, CEP 55578-000, Brasil. Ficando a 4 minutos a pé da praia, próxima a mercadinhos e quiosques de praia
+               </p>
+            </div>
+         </div>
+      </div>
+      <div id="imagens">
+
+         <div class="row-left">
+            <div class="item-left"><img src="imagens/externo/churrasco-pia.jpeg" id="1" onclick="Modal.open(this.id)"></div>
+            <div class="item-left"><img src="imagens/Primeiro-andar/sala.jpeg" id="7" onclick="Modal.open(this.id)"></div>
+            <div class="item-left"><img src="imagens/Primeiro-andar/cozinha2.jpeg" id="9" onclick="Modal.open(this.id)"></div>
+            <div class="item-left"><img src="imagens/Primeiro-andar/quartinho-escada.jpeg" id="13"  onclick="Modal.open(this.id)"></div>
+         </div>
+
+         <div class="item-principal"><img src="imagens/externo/casa-full.jpeg" id="5" onclick="Modal.open(this.id)"></div>
+
+         <div class="row-bottom">
+            <div class="item-bottom"><img src="imagens/segundo-andar/suite-esquerda.jpeg" id="15" 
+            onclick="Modal.open(this.id)"></div>
+            <div class="item-bottom"><img src="imagens/segundo-andar/camas-suite-direita.jpeg" id="17" onclick="Modal.open(this.id)"></div>
+            <div class="item-bottom"><img src="imagens/segundo-andar/suite-direita.jpeg" id="19" onclick="Modal.open(this.id)"></div>
+            <div class="item-bottom"><img src="imagens/segundo-andar/quarto-2-andar.jpeg" id="20" onclick="Modal.open(this.id)"></div>
+            <div class="item-bottom"><img src="imagens/externo/casa-full2.jpeg" id="23" onclick="Modal.open(this.id)"></div>
+            
+         </div>
+
+         <div class="quadro-avisos">
+
+            <div class="possuimos">
+               <h2>Possuímos</h2>
+               <div class="avisos first">
+                  <abbr title="4 Quartos sendo 2 suites"><img src="assets/icons8-quarto-50.png" alt=""></abbr>
+                  <abbr title="4 banheiros internos e 1 externo"><img src="assets/icons8-water-closet-50.png" alt=""></abbr>
+                  <abbr title="Piscina"><img src="assets/icons8-nadar-50.png" alt=""></abbr>
+                  <abbr title="Wi-fi gratís"><img src="assets/icons8-wi-fi-good-50.png" alt=""></abbr>
+                  <abbr title="Cozinha"><img src="assets/icons8-kitchen-room-50.png" alt=""></abbr>
+                  <abbr title="Área para churrascos"><img src="assets/icons8-churrasco-50.png" alt=""></abbr>
+               </div>
+            </div>
+
+            <div class="possuimos">
+               <h2>Não permitimos</h2>
+               <div class="avisos">
+                  <abbr title="Animais"><img src="assets/icons8-pets-50.png" alt=""></abbr>
+               </div>
+            </div>
+
+            <div class="possuimos">
+               <h2>Recursos naturais da cidade</h2>
+               <div class="avisos">
+                  <abbr title="Cachoeira"><img src="assets/icons8-cascata-50.png" alt=""></abbr>
+                  <abbr title="Praias"><img src="assets/icons8-praia-50.png" alt=""></abbr>
+               </div>
+            </div>
+
+
+         </div>
+      </div>
+      <div class="modal">
+         <div class="imagens-modal">
+            <div class="slideshow-container">
+               <!-- Itens do slider -->
+               <div class="mySlides fade">
+                  <div class="numbertext">1 / 23</div>
+                  <img src="imagens/externo/churrasco-pia.jpeg" style="width:100%">
+               </div>
+               <div class="mySlides fade">
+                  <div class="numbertext">2 / 23</div>
+                  <img src="imagens/externo/piscina-frente.jpeg" style="width:100%">
+               </div>
+               <div class="mySlides fade">
+                  <div class="numbertext">3 / 23</div>
+                  <img src="imagens/externo/corredor.jpeg" style="width:100%">
+               </div>
+               <div class="mySlides fade">
+                  <div class="numbertext">4 / 23</div>
+                  <img src="imagens/externo/banheiro-externo.jpeg" style="width:100%">
+               </div>
+               <div class="mySlides fade">
+                  <div class="numbertext">5 / 23</div>
+                  <img src="imagens/externo/casa-full.jpeg" style="width:100%">
+               </div>
+               <div class="mySlides fade">
+                  <div class="numbertext">6 / 23</div>
+                  <img src="imagens/Primeiro-andar/terraco.jpeg" style="width:100%">
+               </div>
+               <div class="mySlides fade">
+                  <div class="numbertext">7 / 23</div>
+                  <img src="imagens/Primeiro-andar/sala.jpeg" style="width:100%">
+               </div>
+               <div class="mySlides fade">
+                  <div class="numbertext">8 / 23</div>
+                  <img src="imagens/Primeiro-andar/cozinha1.jpeg" style="width:100%">
+               </div>
+               <div class="mySlides fade">
+                  <div class="numbertext">9 / 23</div>
+                  <img src="imagens/Primeiro-andar/cozinha2.jpeg" style="width:100%">
+               </div>
+               <div class="mySlides fade">
+                  <div class="numbertext">10 / 23</div>
+                  <img src="imagens/Primeiro-andar/mesa-de-jantar.jpeg" style="width:100%">
+               </div>
+               <div class="mySlides fade">
+                  <div class="numbertext">11 / 23</div>
+                  <img src="imagens/Primeiro-andar/quarto-1-andar2.jpeg" style="width:100%">
+               </div>
+               <div class="mySlides fade">
+                  <div class="numbertext">12 / 23</div>
+                  <img src="imagens/Primeiro-andar/quarto-1-andar.jpeg" style="width:100%">
+               </div>
+               <div class="mySlides fade">
+                  <div class="numbertext">13 / 23</div>
+                  <img src="imagens/Primeiro-andar/quartinho-escada.jpeg" style="width:100%">
+               </div>
+               <div class="mySlides fade">
+                  <div class="numbertext">14 / 23</div>
+                  <img src="imagens/Primeiro-andar/area-de-servico.jpeg" style="width:100%">
+               </div>
+               <div class="mySlides fade">
+                  <div class="numbertext">15 / 23</div>
+                  <img src="imagens/segundo-andar/suite-esquerda.jpeg" style="width:100%">
+               </div>
+               <div class="mySlides fade">
+                  <div class="numbertext">16 / 23</div>
+                  <img src="imagens/segundo-andar/banheiro-suite-esquerda.jpeg" style="width:100%">
+               </div>
+               <div class="mySlides fade">
+                  <div class="numbertext">17 / 23</div>
+                  <img src="imagens/segundo-andar/camas-suite-direita.jpeg" style="width:100%">
+               </div>
+               <div class="mySlides fade">
+                  <div class="numbertext">18 / 23</div>
+                  <img src="imagens/segundo-andar/banheiro-suite-direita.jpeg" style="width:100%">
+               </div>
+               <div class="mySlides fade">
+                  <div class="numbertext">19 / 23</div>
+                  <img src="imagens/segundo-andar/suite-direita.jpeg" style="width:100%">
+               </div>
+               <div class="mySlides fade">
+                  <div class="numbertext">20 / 23</div>
+                  <img src="imagens/segundo-andar/quarto-2-andar.jpeg" style="width:100%">
+               </div>
+               <div class="mySlides fade">
+                  <div class="numbertext">21 / 23</div>
+                  <img src="imagens/segundo-andar/quarto-2-andar2.jpeg" style="width:100%">
+               </div>
+               <div class="mySlides fade">
+                  <div class="numbertext">22 / 23</div>
+                  <img src="imagens/segundo-andar/banheiro-2-andar.jpeg" style="width:100%">
+               </div>
+               <div class="mySlides fade">
+                  <div class="numbertext">23 / 23</div>
+                  <img src="imagens/externo/casa-full2.jpeg" style="width:100%">
+               </div>
+               
+               <!-- Botões -->
+               <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+               <a class="next" onclick="plusSlides(1)">&#10095;</a>
+               <a href="#imagens" onclick="Modal.close()" class="button cancel">x</a>
+            </div>
+         </div>
+      </div>
+      <script src="script.js"></script>
+   </body>
+</html>
